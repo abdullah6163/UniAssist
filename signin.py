@@ -1,13 +1,21 @@
 from tkinter import *
 from PIL import ImageTk
-
+from tkinter import messagebox
 
 def work():
 
     def home():
-        root.destroy()
-        import home
-
+        user = username.get()
+        pas = password.get()
+        if user == 'admin' and pas == '1234':
+            root.destroy()
+            import home
+        elif user == 'admin' and pas == '1234':
+            messagebox.showerror("Invalid", "Invalid username or password")
+        elif user != 'admin':
+            messagebox.showerror("invalid", "Invalid username")
+        elif pas != '1234':
+            messagebox.showerror("Invalid", 'Invalid Password')
 
 
 

@@ -1,9 +1,19 @@
 from tkinter import *
 from PIL import Image, ImageTk
 
+
+
+def research():
+    root_home.destroy()
+    import research
+
+
+
 def cont():
     root_home.destroy()
     import contest
+
+
 def resize_image(image_path, width, height):
     original_image = Image.open(image_path)
     resized_image = original_image.resize((width, height))
@@ -12,11 +22,10 @@ def resize_image(image_path, width, height):
 
 
 root_home = Tk()
-w = 780
-h = 550
+w = 800
+h = 530
 sw = root_home.winfo_screenwidth()
 sh = root_home.winfo_screenheight()
-
 
 x = (sw // 2) - (w // 2)
 y = (sh // 2) - (h // 2)
@@ -37,28 +46,28 @@ heading = Label(root_home, width=30, text='Welcome To UniConnect', font=('Open S
                 fg='white')
 heading.place(x=100, y=20)
 
-label2 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label2 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label2.place(x=30, y=100)
 
-label3 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label3 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label3.place(x=220, y=100)
 
-label4 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label4 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label4.place(x=410, y=100)
 
-label5 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label5 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label5.place(x=600, y=100)
 
-label6 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label6 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label6.place(x=30, y=300)
 
-label7 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label7 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label7.place(x=220, y=300)
 
-label8 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label8 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label8.place(x=410, y=300)
 
-label9 = Button(root_home, width=20, height=10, bg='white',bd=0)
+label9 = Button(root_home, width=20, height=10, bg='white', bd=0)
 label9.place(x=600, y=300)
 
 contest_path = 'image/success.png'
@@ -101,19 +110,38 @@ skill = resize_image(skill_path, 90, 90)
 skillL = Label(root_home, image=skill, bg='white')
 skillL.place(x=640, y=335)
 
-
-labelCont = Button(root_home,text='Contest',font=('Open Sans',12,'bold'),bd=0,width=10, height=0, bg='white',command=cont)
+labelCont = Button(root_home, text='Contest', font=('Open Sans', 11, 'bold'), bd=0, width=10, height=0, bg='white',
+                   command=cont)
 labelCont.place(x=50, y=230)
 
-labelResearch = Button(root_home,text='Research Paper',font=('Open Sans',12,'bold'),bd=0,width=12, height=0, bg='white')
+labelResearch = Button(root_home, text='Research Paper', font=('Open Sans', 11, 'bold'), bd=0, width=12, height=0,
+                       bg='white',command=research)
 labelResearch.place(x=235, y=230)
 
+labelNews = Button(root_home, text='NewsFeed', font=('Open Sans', 11, 'bold'), bd=0, width=12, height=0, bg='white')
+labelNews.place(x=430, y=230)
 
-labelNews = Button(root_home,text='NewsFeed',font=('Open Sans',12,'bold'),bd=0,width=12, height=0, bg='white')
-labelNews.place(x=420, y=230)
+labelJob = Button(root_home, text='Job and Internship', font=('Open Sans', 11, 'bold'), bd=0, width=14, height=0,
+                  bg='white')
+labelJob.place(x=605, y=230)
+
+labelQuiz = Button(root_home, text='Interactive Quiz', font=('Open Sans', 11, 'bold'), bd=0, width=14, height=0,
+                   bg='white')
+labelQuiz.place(x=40, y=430)
+
+labelClub = Button(root_home, text='Club & Community', font=('Open Sans', 11, 'bold'), bd=0, width=14, height=0,
+                   bg='white')
+labelClub.place(x=230, y=430)
 
 
 
+labelExchange = Button(root_home, text='Study Abroad', font=('Open Sans', 11, 'bold'), bd=0, width=14, height=0,
+                   bg='white')
+labelExchange.place(x=420, y=430)
+
+labelExchange = Button(root_home, text='Skill Development', font=('Open Sans', 11, 'bold'), bd=0, width=14, height=0,
+                   bg='white')
+labelExchange.place(x=605, y=430)
 
 
 

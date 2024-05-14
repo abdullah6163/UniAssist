@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 
-def contest():
+def cont():
     root_home.destroy()
     import contest
 def resize_image(image_path, width, height):
@@ -16,7 +16,7 @@ w = 780
 h = 550
 sw = root_home.winfo_screenwidth()
 sh = root_home.winfo_screenheight()
-root_home.overrideredirect(True)
+
 
 x = (sw // 2) - (w // 2)
 y = (sh // 2) - (h // 2)
@@ -37,28 +37,28 @@ heading = Label(root_home, width=30, text='Welcome To UniConnect', font=('Open S
                 fg='white')
 heading.place(x=100, y=20)
 
-label2 = Button(root_home, width=20, height=10, bg='white',command=contest)
+label2 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label2.place(x=30, y=100)
 
-label3 = Button(root_home, width=20, height=10, bg='white')
+label3 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label3.place(x=220, y=100)
 
-label4 = Button(root_home, width=20, height=10, bg='white')
+label4 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label4.place(x=410, y=100)
 
-label5 = Button(root_home, width=20, height=10, bg='white')
+label5 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label5.place(x=600, y=100)
 
-label6 = Button(root_home, width=20, height=10, bg='white')
+label6 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label6.place(x=30, y=300)
 
-label7 = Button(root_home, width=20, height=10, bg='white')
+label7 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label7.place(x=220, y=300)
 
-label8 = Button(root_home, width=20, height=10, bg='white')
+label8 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label8.place(x=410, y=300)
 
-label9 = Button(root_home, width=20, height=10, bg='white')
+label9 = Button(root_home, width=20, height=10, bg='white',bd=0)
 label9.place(x=600, y=300)
 
 contest_path = 'image/success.png'
@@ -100,6 +100,22 @@ skill_path = 'image/skill.png'
 skill = resize_image(skill_path, 90, 90)
 skillL = Label(root_home, image=skill, bg='white')
 skillL.place(x=640, y=335)
+
+
+labelCont = Button(root_home,text='Contest',font=('Open Sans',12,'bold'),bd=0,width=10, height=0, bg='white',command=cont)
+labelCont.place(x=50, y=230)
+
+labelResearch = Button(root_home,text='Research Paper',font=('Open Sans',12,'bold'),bd=0,width=12, height=0, bg='white')
+labelResearch.place(x=235, y=230)
+
+
+labelNews = Button(root_home,text='NewsFeed',font=('Open Sans',12,'bold'),bd=0,width=12, height=0, bg='white')
+labelNews.place(x=420, y=230)
+
+
+
+
+
 
 
 root_home.mainloop()

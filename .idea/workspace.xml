@@ -5,37 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec216f7-d906-454b-a65f-3f7ece0df658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Splash.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Capture1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/bg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/businessman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/closeye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/home-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/international-relations.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/membership.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/openeye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/publication.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/seo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/skill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/speech-bubble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/home.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,22 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.Login.executor": "Run",
-    "Python.SignUp.executor": "Run",
-    "Python.Splash.executor": "Run",
-    "Python.contest.executor": "Run",
-    "Python.home.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "Python.signin.executor": "Run",
-    "Python.signup.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Fahim/PycharmProjects/OOP2/image"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.Login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SignUp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Splash.executor&quot;: &quot;Run&quot;,
+    &quot;Python.contest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.home.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signin.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signup.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Fahim/PycharmProjects/OOP2/image&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Fahim\PycharmProjects\OOP2\image" />

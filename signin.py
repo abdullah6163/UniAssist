@@ -1,40 +1,52 @@
 from tkinter import *
 from PIL import ImageTk
 from tkinter import messagebox
+import mysql.connector
 
-def work():
+def home():
+    user = username.get()
+    pas = password.get()
 
-    def home():
-        user = username.get()
-        pas = password.get()
-        if user == 'admin' and pas == '1234':
+    try:
+        conn = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="",
+            database="user_database"
+        )
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE username = %s", (user,))
+        row = cursor.fetchone()
+
+        if row and row[5] == pas:
             root.destroy()
-            import home
-        elif user == 'admin' and pas == '1234':
+            import home  # Assuming the home module correctly handles the next window
+        else:
             messagebox.showerror("Invalid", "Invalid username or password")
-        elif user != 'admin':
-            messagebox.showerror("invalid", "Invalid username")
-        elif pas != '1234':
-            messagebox.showerror("Invalid", 'Invalid Password')
 
+        conn.close()
+    except mysql.connector.Error as err:
+        messagebox.showerror("Database Error", f"Error: {err}")
 
+def sign_up():
+    root.destroy()
+    import signup
+    signup.main()  # Ensure signup.main() is called to open the signup window
 
-    def sign_up():
-        root.destroy()
-        import signup
+def hide():
+    open.config(file='image/closeye.png')
+    password.config(show='*')
 
-    def hide():
-        open.config(file='image/closeye.png')
-        password.config(show='*')
+def on_enter(event):
+    if username.get() == 'Username':
+        username.delete(0, END)
 
-    def on_enter(event):
-        if username.get() == 'Username':
-            username.delete(0, END)
+def on_enter2(event):
+    if password.get() == 'Password':
+        password.delete(0, END)
 
-    def on_enter2(event):
-        if password.get() == 'Password':
-            password.delete(0, END)
-
+def main():
+    global root, username, password, open
     root = Tk()
     w = 780
     h = 500
@@ -46,7 +58,7 @@ def work():
     y = (sh // 2) - (h // 2)
     root.geometry(f"{w}x{h}+{x}+{y}")
     root.configure(bg="black")
-    root.resizable(0, 0)
+    root.resizable(0,    0)
     root.title('Login Page')
 
     photo1 = ImageTk.PhotoImage(file='image/background.jpg')
@@ -70,21 +82,16 @@ def work():
     Frame(root, width=200, height=2, bg='black').place(x=510, y=180)
 
     open = PhotoImage(file='image/openeye.png')
-    eyebutton = Button(root, image=open, bd=0, bg='white',
-                       activebackground='white', command=hide)
+    eyebutton = Button(root, image=open, bd=0, bg='white', activebackground='white', command=hide)
     eyebutton.place(x=680, y=150)
 
-    forget = Button(root, text='Forget Password?', bd=0, bg='white',
-                    activebackground='white',
-                    font=('Microsoft Yahei UI light', 9, 'bold'))
+    forget = Button(root, text='Forget Password?', bd=0, bg='white', activebackground='white', font=('Microsoft Yahei UI light', 9, 'bold'))
     forget.place(x=600, y=190)
 
-    login = Button(root, text='Login', font=('Open Sans', 14, 'bold'),
-                   bg='blue', fg='white', bd=0, width=16,command=home)
+    login = Button(root, text='Login', font=('Open Sans', 14, 'bold'), bg='blue', fg='white', bd=0, width=16, command=home)
     login.place(x=510, y=250)
 
-    orr = Label(root, text='-----------------OR-----------------', font=('Open Sans', 12, 'bold')
-                , fg='black', bg='white')
+    orr = Label(root, text='-----------------OR-----------------', font=('Open Sans', 12, 'bold'), fg='black', bg='white')
     orr.place(x=510, y=300)
 
     fb = PhotoImage(file='image/facebook.png')
@@ -99,16 +106,14 @@ def work():
     gL = Label(root, image=g, bg='white')
     gL.place(x=650, y=350)
 
-    sign = Label(root, text='Dont have any account?', font=('Open Sans', 8, 'bold')
-                 , fg='black', bg='white')
+    sign = Label(root, text='Dont have any account?', font=('Open Sans', 8, 'bold'), fg='black', bg='white')
     sign.place(x=510, y=400)
 
-    cr = Button(root, text='Crete a new', font=('Open Sans', 8, 'bold')
-                , fg='blue', bg='white', activebackground='white', bd=0, command=sign_up)
+    cr = Button(root, text='Create a new', font=('Open Sans', 8, 'bold'), fg='blue', bg='white', activebackground='white', bd=0, command=sign_up)
     cr.place(x=650, y=400)
 
     root.mainloop()
 
-
 if __name__ == "__main__":
-    work()
+    main()
+

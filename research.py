@@ -2,11 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
 
-def clear_fields():
-    name_entry.delete(0, tk.END)
-    category_combo.set('')
-    date_entry.delete(0, tk.END)
-    author_entry.delete(0, tk.END)
 
 def upload_file():
     file_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
@@ -60,7 +55,6 @@ upload_button.grid(row=5, column=1, padx=20, pady=10, sticky="w")
 submit_button = tk.Button(root, text="Submit Paper", width=20)
 submit_button.grid(row=6, column=0, columnspan=2, pady=20)
 
-clear_button = tk.Button(root, text="Clear Fields", width=20, command=clear_fields)
-clear_button.grid(row=7, column=0, columnspan=2, pady=10)
+
 
 root.mainloop()

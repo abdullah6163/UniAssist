@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ec216f7-d906-454b-a65f-3f7ece0df658" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/image/previous.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/research.py" afterDir="false" />
+    <list default="true" id="9ec216f7-d906-454b-a65f-3f7ece0df658" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/abroad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/club.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsfeed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skill.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contest.py" beforeDir="false" afterPath="$PROJECT_DIR$/contest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signin.py" beforeDir="false" afterPath="$PROJECT_DIR$/signin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organize.py" beforeDir="false" afterPath="$PROJECT_DIR$/organize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/research.py" beforeDir="false" afterPath="$PROJECT_DIR$/research.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,25 +62,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.Login.executor": "Run",
-    "Python.SignUp.executor": "Run",
-    "Python.Splash.executor": "Run",
-    "Python.contest.executor": "Run",
-    "Python.home.executor": "Run",
-    "Python.organize.executor": "Run",
-    "Python.practice.executor": "Run",
-    "Python.research.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "Python.signin.executor": "Run",
-    "Python.signup.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Fahim/PycharmProjects/OOP2/image"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.Login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SignUp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Splash.executor&quot;: &quot;Run&quot;,
+    &quot;Python.abroad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.club.executor&quot;: &quot;Run&quot;,
+    &quot;Python.contest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.home.executor&quot;: &quot;Run&quot;,
+    &quot;Python.job.executor&quot;: &quot;Run&quot;,
+    &quot;Python.newsfeed.executor&quot;: &quot;Run&quot;,
+    &quot;Python.organize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.practice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quiz.executor&quot;: &quot;Run&quot;,
+    &quot;Python.research.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signin.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.skill.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Fahim/PycharmProjects/OOP2/image&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Fahim\PycharmProjects\OOP2\image" />
@@ -111,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715657427570</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new">
+      <option name="closed" value="true" />
+      <created>1715669349446</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715669349446</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="c" />
-    <option name="LAST_COMMIT_MESSAGE" value="c" />
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
 </project>

@@ -51,8 +51,7 @@ description_text.grid(row=5, column=1, padx=20, pady=10, sticky="nw")
 organize_button = tk.Button(root, text="Organize Contest", width=20)
 organize_button.grid(row=6, column=0, columnspan=2, pady=20)
 
-clear_button = tk.Button(root, text="Clear Fields", width=20)
-clear_button.grid(row=7, column=0, columnspan=2, pady=10)
+
 
 
 root.mainloop()
